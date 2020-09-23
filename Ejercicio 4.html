@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 4</title>
+</head>
+
+<body>
+    <script>
+        let num1 = parseFloat(window.prompt("Escribe un número"));
+        let num2 = parseFloat(window.prompt("Escribe otro número"));
+        let num3 = parseFloat(window.prompt("Escribe el último número"));
+        if (num1 - num2 == 20) {
+            console.log("El número segundo es 20 menos que el primer número");
+        }
+        else if (num2 - num1 == 20) {
+            console.log("El número primero es 20 menos que el segundo número");
+        }
+        else if (num1 - num3 == 20) {
+            console.log("El número tercero es 20 menos que el primer número");
+        }
+        else if (num3 - num1 == 20) {
+            console.log("El número primero es 20 menos que el tercer número");
+        }
+        else if (num2 - num3 == 20) {
+            console.log("El número tercero es 20 menos que el segundo número");
+        }
+        else if (num3 - num2 == 20) {
+            console.log("El número segundo es 20 menos que el tercer número");
+        }
+    </script>
+</body>
+
+</html>

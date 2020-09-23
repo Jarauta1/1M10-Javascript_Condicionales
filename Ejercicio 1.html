@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 1</title>
+</head>
+<body>
+    <script>
+        let num1 = parseFloat(window.prompt("Escribe un número"));
+        let num2 = parseFloat(window.prompt("Escribe otro número"));
+        let mayor
+        let menor
+        if (num1<num2){
+            mayor = num2;
+            menor = num1;
+        }
+        else {
+            menor = num2;
+            mayor = num1;
+        }
+        console.log("La suma de los dos números es: "+ (num1+num2));
+        console.log("La resta de los dos números es: " + (num1-num2));
+        console.log("La multiplicación de los dos números es: " + (num1*num2));
+        console.log("La media de los dos números es: " + ((num1+num2)/2));
+        console.log("El más grande de los dos números es: " + mayor);
+        console.log("El más pequeño de los dos números es: " + menor);
+    </script>
+</body>
+</html>

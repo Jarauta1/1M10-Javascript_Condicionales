@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 9</title>
+</head>
+<body>
+    <script>
+        let temp = parseInt(window.prompt("¿Qué temperatura hace?"));
+        if (temp>40) {
+            console.log("Vete a otro sitio");
+        }
+        else if (30<temp && temp<=40) {
+            console.log("Enciende el aire acondicionado");
+        }
+        else if (20<temp && temp<=30) {
+            console.log("No hagas nada");
+        }
+        else if (10<temp && temp<=20) {
+            console.log("Enciende la calefacción");
+        }
+        else if (temp<=10) {
+            console.log("Vete a otro sitio");
+        }
+    </script>
+</body>
+</html>

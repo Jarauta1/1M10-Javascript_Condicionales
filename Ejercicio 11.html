@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 11</title>
+</head>
+
+<body>
+    <script>
+        let num1 = window.prompt("Escribe un número entre 25 y 75");
+        let num2
+        let num1Primero = num1.substring(0, 1);
+        let num1Segundo = num1.substring(1, 2);
+
+
+        if (num1 < 75 && num1 > 25) {
+            num2 = window.prompt("Escribe otro número entre 25 y 75");
+            let num2Primero = num2.substring(0, 1);
+            let num2Segundo = num2.substring(1, 2);
+            if (num2 < 75 && num2 > 25) {
+                if (num1Primero == num2Primero) {
+                    console.log(`Los números tienen en común un dígito: ${num1Primero}`);
+                }
+                else if (num1Primero == num2Segundo) {
+                    console.log(`Los números tienen en común un dígito: ${num1Primero}`);
+                }
+                else if (num1Segundo == num2Primero) {
+                    console.log(`Los números tienen en común un dígito: ${num1Segundo}`);
+                }
+                else if (num1Segundo == num2Segundo) {
+                    console.log(`Los números tienen en común un dígito: ${num1Segundo}`);
+                }
+            }
+            else {
+                window.alert("No se cumplen las condiciones puestas")
+            }
+        }
+        else {
+            window.alert("No se cumplen las condiciones puestas")
+        }
+    </script>
+</body>
+
+</html>
