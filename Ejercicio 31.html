@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 31</title>
+</head>
+
+<body>
+    <script>
+        let dato = window.prompt("Piedra, papel o tijera")
+        let maquina
+        function getRandomArbitrary(min, max) {
+            return Math.random() * (max - min) + min;
+        }
+        let variable = parseInt(getRandomArbitrary(1, 4))
+        console.log(variable)
+        switch (variable) {
+            case 1:
+                maquina = "piedra"
+                break;
+            case 2:
+                maquina = "papel"
+                break;
+            case 3:
+                maquina = "tijera"
+                break;
+        }
+        if (dato == "piedra" && maquina == "papel") {
+            window.alert(`Usuario: ${dato}\nMáquina: ${maquina}\nGanador: Máquina`)
+        }
+        else if (dato == "piedra" && maquina == "piedra") {
+            window.alert(`Usuario: ${dato}\nMáquina: ${maquina}\nGanador: Empate`)
+        }
+        else if (dato == "piedra" && maquina == "tijera") {
+            window.alert(`Usuario: ${dato}\nMáquina: ${maquina}\nGanador: Usuario`)
+        }
+        else if (dato == "papel" && maquina == "papel") {
+            window.alert(`Usuario: ${dato}\nMáquina: ${maquina}\nGanador: Empate`)
+        }
+        else if (dato == "papel" && maquina == "piedra") {
+            window.alert(`Usuario: ${dato}\nMáquina: ${maquina}\nGanador: Usuario`)
+        }
+        else if (dato == "papel" && maquina == "tijera") {
+            window.alert(`Usuario: ${dato}\nMáquina: ${maquina}\nGanador: Máquina`)
+        }
+        else if (dato == "tijera" && maquina == "papel") {
+            window.alert(`Usuario: ${dato}\nMáquina: ${maquina}\nGanador: Usuario`)
+        }
+        else if (dato == "tijera" && maquina == "piedra") {
+            window.alert(`Usuario: ${dato}\nMáquina: ${maquina}\nGanador: Máquina`)
+        }
+        else if (dato == "tijera" && maquina == "tijera") {
+            window.alert(`Usuario: ${dato}\nMáquina: ${maquina}\nGanador: Empate`)
+        }
+    </script>
+</body>
+
+</html>

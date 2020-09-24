@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 28</title>
+</head>
+
+<body>
+    <script>
+        let num = window.prompt("Escribe un número de tres cifras")
+        let num1 = parseInt(num.substring(0, 1))
+        let num2 = parseInt(num.substring(1, 2))
+        let num3 = parseInt(num.substring(2, 3))
+        
+        let div1 = num1 / 2
+        let div2 = num2 / 2
+        let div3 = num3 / 2
+        let div1S = div1.toString()
+        let div2S = div2.toString()
+        let div3S = div3.toString()
+        let final1 = div1S.indexOf(".")
+        let final2 = div2S.indexOf(".")
+        let final3 = div3S.indexOf(".")
+        if (final1 < 0 && final2 < 0 && final3 < 0) {
+            window.alert(`${num}: todas las cifras son pares`)
+        }
+        else if (final1 > 0 && final2 > 0 && final3 > 0) {
+            window.alert(`${num}: todas las cifras son impares`)
+        }
+        else {
+            window.alert(`${num}: El número tiene cifras pares e impares`)
+        }
+
+    </script>
+</body>
+
+</html>

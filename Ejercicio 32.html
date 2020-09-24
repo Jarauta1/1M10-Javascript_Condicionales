@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 32</title>
+</head>
+
+<body>
+    <script>
+        let eleccion = parseInt(window.prompt("Vamos a empezar el camino, elige un número de puerta (1,2,3 o 4)"))
+        switch (eleccion) {
+            case 1:
+                let puerta1 = window.prompt("Has elegido la puerta nº 1, ¿quieres ir izquierda o derecha?")
+                switch (puerta1) {
+                    case "izquierda":
+                        window.alert(`Lo siento, no hay salida`)
+                        break;
+                    case "derecha":
+                        window.alert(`¡Encontraste la salida!`)
+                        break;
+                    default:
+                        window.alert(`Lo siento, no es correcto.`)
+                        break;
+                }
+                break;
+            case 2:
+                let puerta2 = window.prompt("Has elegido la puerta nº 2, ¿quieres ir arriba o abajo?")
+                switch (puerta2) {
+                    case "arriba":
+                        window.alert(`¡Encontraste la salida!`)
+                        break;
+                    case "abajo":
+                        window.alert(`Lo siento, no hay salida`)
+                        break;
+                    default:
+                        window.alert(`Lo siento, no es correcto.`)
+                        break;
+                }
+                break;
+            case 3:
+                let puerta3 = window.prompt("Has elegido la puerta nº 3 y aparecen dos puertas más, ¿quieres la puerta A o la B?")
+                switch (puerta3) {
+                    case "A":
+                        window.alert(`Lo siento, no hay salida`)
+                        break;
+                    case "B":
+                        window.alert(`¡Encontraste la salida!`)
+                        break;
+                    default:
+                        window.alert(`Lo siento, no es correcto.`)
+                        break;
+                }
+                break;
+            case 4:
+                let puerta4 = window.prompt("Has elegido la puerta nº 4, ¿quieres ir izquierda o derecha?")
+                switch (puerta4) {
+                    case "izquierda":
+                        window.alert(`¡Encontraste la salida!`)
+                        break;
+                    case "derecha":
+                        window.alert(`Lo siento, no hay salida`)
+                        break;
+                    default:
+                        window.alert(`Lo siento, no es correcto.`)
+                        break;
+                }
+                break;
+            default:
+                window.alert(`Lo siento, no es correcto.`)
+                break;
+        }
+    </script>
+</body>
+
+</html>

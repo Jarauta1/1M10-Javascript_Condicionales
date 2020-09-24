@@ -1,15 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ejercicio 17</title>
 </head>
+
 <body>
     <script>
-       let frase = window.prompt("Escribe una frase");
-       let largura = frase.length;
-       
+        let frase = window.prompt("Escribe una frase");
+        let largura = frase.length;
+        let division = parseFloat(largura / 2);
+        let divisionString = division.toString()
+        let parImpar = divisionString.substring(divisionString.length - 1, divisionString.length)
+        if (parImpar == 5) {
+            let consola = frase.substring(largura - division, largura - division + 1)
+            console.log(`Al ser impar, el carácter central es: ${consola}`)
+        }
+        else {
+            let consola = frase.substring(largura - division - 1, largura - division + 1)
+            console.log(`Al ser par, los dos carácteres centrales son: ${consola}`)
+        }
+
     </script>
 </body>
+
 </html>

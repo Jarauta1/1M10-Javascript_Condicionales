@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 25</title>
+</head>
+
+<body>
+    <script>
+        let nombre = window.prompt("Escribe tu nombre.")
+        let ventas = parseInt(window.prompt("Escribe tus ventas."))
+        if (ventas > 500) {
+            let extra = (ventas * 5) / 100
+            window.alert(`${nombre}, has vendido ${ventas} € y tienes un extra de ${extra} €.`)
+        }
+        else {
+            window.alert(`${nombre}, has vendido ${ventas}`)
+        }
+    </script>
+</body>
+
+</html>

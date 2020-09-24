@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 20</title>
+</head>
+
+<body>
+    <script>
+        let eleccion = window.prompt("Tenemos chipirones, calamares, solomillo y morcilla")
+        if (eleccion == "chipirones") {
+            let chipirones = window.prompt("¿Los quiere rellenos o a la plancha?")
+            if (chipirones == "rellenos" || chipirones == "plancha") {
+                window.alert(`¡Marchando una de ${eleccion} ${chipirones}!`)
+            }
+            else { window.alert(`Lo siento, chipirones ${chipirones} no tenemos.`) }
+        }
+        else if (eleccion == "calamares") {
+            let calamares = window.prompt("¿Los quiere en bocadillo o en plato?")
+            if (calamares == "bocadillo" || calamares == "plato") {
+                window.alert(`¡Marchando un ${calamares} de ${eleccion}!`)
+            }
+            else { window.alert(`Lo siento, calamares ${calamares} no tenemos.`) }
+        }
+        else if (eleccion == "solomillo") {
+            let solomillo = window.prompt("¿Con salsa de roquefort o de almendras?")
+            if (solomillo == "roquefort" || solomillo == "almendras") {
+                window.alert(`¡Marchando una de ${eleccion} con salsa de ${solomillo}!`)
+            }
+            else { window.alert(`Lo siento, solomillo ${solomillo} no tenemos.`) }
+        }
+        else if (eleccion == "morcilla") {
+            let morcilla = window.prompt("La quiere a la brasa o frita")
+            if (morcilla == "brasa" || morcilla == "frita") {
+                window.alert(`¡Marchando una de ${eleccion} ${morcilla}!`)
+            }
+            else { window.alert(`Lo siento, morcilla ${morcilla} no tenemos.`) }
+        }
+        else {
+            window.alert(`Lo siento, ${eleccion} no tenemos.`)
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 27</title>
+</head>
+
+<body>
+    <script>
+        let año = parseInt(window.prompt("Escribe un año."))
+        let cuatro = año / 4
+        let cien = año / 100
+        let cuatrocientos = año / 400
+        
+        let cuatroString = cuatro.toString()
+        let cienString = cien.toString()
+        let cuatrocientosString = cuatrocientos.toString()
+        
+        let cuatroPunto = cuatroString.indexOf(".")
+        let cienPunto = cienString.indexOf(".")
+        let cuatrocientosPunto = cuatrocientosString.indexOf(".")
+       
+        if (cuatroPunto < 0 && cienPunto > 0 && cuatrocientosPunto > 0) {
+            window.alert("Es bisiesto.")
+        }
+        else {
+            window.alert("No es bisiesto.")
+        }    </script>
+</body>
+
+</html>

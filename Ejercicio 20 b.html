@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 20</title>
+</head>
+
+<body>
+    <script>
+        let eleccion = window.prompt("Tenemos chipirones, calamares, solomillo y morcilla")
+        switch (eleccion) {
+            case "chipirones":
+                let chipirones = window.prompt("¿Los quiere rellenos o a la plancha?")
+                switch (chipirones) {
+                    case "rellenos":
+                        window.alert(`¡Marchando una de chipirones rellenos!`)
+                        break;
+                    case "plancha":
+                        window.alert(`¡Marchando una de chipirones plancha!`)
+                        break;
+                    default:
+                        window.alert(`Lo siento, de eso no tenemos.`)
+                        break;
+                }
+                break;
+            case "calamares":
+                let calamares = window.prompt("¿Los quiere en bocadillo o plato?")
+                switch (calamares) {
+                    case "bocadillo":
+                        window.alert(`¡Marchando un bocadillo de calamares!`)
+                        break;
+                    case "plato":
+                        window.alert(`¡Marchando un plato de calamares!`)
+                        break;
+                    default:
+                        window.alert(`Lo siento, de eso no tenemos.`)
+                        break;
+                }
+                break;
+            case "solomillo":
+                let solomillo = window.prompt("¿Lo quiere con salsa roquefort o de almendras?")
+                switch (solomillo) {
+                    case "roquefort":
+                        window.alert(`¡Marchando un solomillo al roquefort!`)
+                        break;
+                    case "almendras":
+                        window.alert(`¡Marchando un solomillo con salsa de almendras!`)
+                        break;
+                    default:
+                        window.alert(`Lo siento, de eso no tenemos.`)
+                        break;
+                }
+                break;
+            case "morcilla":
+                let morcilla = window.prompt("¿La quiere a la brasa o frita?")
+                switch (morcilla) {
+                    case "brasa":
+                        window.alert(`¡Marchando una morcilla a la brasa!`)
+                        break;
+                    case "frita":
+                        window.alert(`¡Marchando una morcilla frita!`)
+                        break;
+                    default:
+                        window.alert(`Lo siento, de eso no tenemos.`)
+                        break;
+                }
+                break;
+            default:
+                window.alert(`Lo siento, de eso no tenemos.`)
+                break;
+        }
+    </script>
+</body>
+
+</html>
